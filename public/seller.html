@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/seller.css">
+</head>
+<body>
+    
+   <img src="./img/loader.gif" alt="" class="loader">
+   <div class="alert-box">
+       <img src="./img/error.png" alt="" class="alert-img">
+       <p class="alert-msg show">Error message</p>
+   </div>
+
+   <img src="./img/logo1.jpg" class="logo" alt="">
+
+   <!-- become seller element -->
+   <div class="become-seller hide">
+       <p class="heading">become a seller</p>
+       <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime voluptates voluptatem, unde distinctio quisquam. Repellat, enim fugit, voluptatibus adipisci earum similique modi sit fugiat temporibus soluta error nemo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, corrupti, quo cupiditate inventore minus provident nemo blanditiis est ut consequuntur nisi minima consectetur hic tempore? Sed saepe libero omnis sint!</p>
+       <button class="btn" id="apply-btn">apply for seller account</button>
+   </div>
+
+   <!-- apply form -->
+   <div class="apply-form hide">
+       <input type="text" id="business-name" placeholder="business name / company name / shop name">
+       <textarea id="business-add" placeholder="address"></textarea>
+       <textarea id="about" placeholder="about"></textarea>
+       <input type="text" id="number" placeholder="number">
+
+       <input type="checkbox" checked class="checkbox" id="terms-and-condition">
+        <label for="terms-and-condition">agree to our <a href="#">terms and condition</a></label>
+        <br>
+        <input type="checkbox" checked class="checkbox" id="legitInfo">
+        <label for="legitInfo">all information is legit</label>
+        <button class="submit-btn" id="apply-form-btn">apply</button>
+   </div>
+
+   <!-- products list -->
+   <div class="product-listing">
+       <div class="add-product">
+           <p class="add-product-title">add product</p>
+           <button class="btn">add product</button>
+       </div>
+       <img src="./img/no-products.jpg" alt="" class="no-product-img">
+   </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/seller.js"></script>
+</body>
+</html>

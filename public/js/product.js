@@ -21,6 +21,6 @@ sizeBtns.forEach((item, i) => {
     item.addEventListener("click", () => {
         sizeBtns[checkedBtn].classList.remove("check");
         item.classList.add("check");
-        checkBtn = i;
+        checkedBtn = i;
     });
 });
